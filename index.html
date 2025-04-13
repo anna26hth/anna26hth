@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Anna Huynh" width="120">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Anna Huynh">Anna Huynh</h1>
+
+          <p class="title">Data Analytics</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:hth2602.anna@gmail.com" class="contact-link">hth2602.anna@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+8504200397" class="contact-link">+1 (850) 420-0397</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2004-02-26">Feb 26, 2004</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Milton, Florida, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/anna26hth/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hi there, I am Anna (Thuong) Huynh! I am an honor undergraduate student pursuing Management Information
+            Systems with a minor in Computer Science at the University of West Florida, Florida, USA.
+          </p>
+
+          <p>
+            Through my college experience, I have completed coursework in Statistics, Data Analytics, Data Management,
+            Business Analytics, and Programming. As a motivated professional at the intersection of data and finance, I
+            have actively engaged in research, competitions, and campus involvement.
+            Additionally, I have gained valuable experiences that have sharpened my analytical mindset and
+            problem-solving skills, aligning with my passion for driving data-driven insights to create meaningful
+            impacts for businesses.
+          </p>
+
+          <div style="flex: 1; margin: 0 10px;">
+            <img src="./assets/images/research-assistant.png" alt="research-assistant"
+              style="width: 100%; height: auto; border-radius: 8px;">
+            <p style="text-align: center; margin-top: 5px;">Presented at UWF Symposium 2024.</p>
+          </div>
+
+          <div style="flex: 1; margin: 0 10px;">
+            <img src="./assets/images/csda-lab1.jpg" alt="csda-lab1"
+              style="width: 100%; height: auto; border-radius: 8px;">
+            <p style="text-align: center; margin-top: 5px;">Member of Computational Statistics & Data Analytics Lab.</p>
+          </div>
+        </section>
+
+
+        <!--
+          - hobbies
+        -->
+
+        <section class="hobbies">
+
+          <h3 class="h3 hobbies-title">Hobbies</h3>
+
+          <ul class="hobbies-list">
+
+            <li class="hobbies-item">
+
+              <div class="hobbies-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="cooking icon" width="40">
+              </div>
+
+              <div class="hobbies-content-box">
+                <h4 class="h4 hobbies-item-title">Cooking</h4>
+                <p class="hobbies-item-text">
+                  I love to make Vietnamese dishes, allowing me to express my creativity and share delightful meals with
+                  family and friends.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="hobbies-item">
+
+              <div class="hobbies-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Sports" width="40">
+              </div>
+
+              <div class="hobbies-content-box">
+                <h4 class="h4 hobbies-item-title">Sports</h4>
+
+                <p class="hobbies-item-text">
+                  Playing badminton, pickleball helps me unwind and reset.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="hobbies-item">
+
+              <div class="hobbies-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="Music" width="40">
+              </div>
+
+              <div class="hobbies-content-box">
+                <h4 class="h4 hobbies-item-title">Music</h4>
+                <p class="hobbies-item-text">
+                  Playing ukelele, guitar is my cherished hobbies that provides me with a wonderful outlet for
+                  relaxation and self-expression.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="hobbies-item">
+
+              <div class="hobbies-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="hobbies-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="hobbies-item-text">
+                  I enjoy capturing moments through my digicam.
+                </p>
+              </div>
+
+            </li>
+            <div style="display: flex; justify-content: space-between; margin: 20px 0;">
+              <div style="flex: 1; margin: 0 10px;">
+                <img src="./assets/images/hobby-cook.jpg" alt="Cook"
+                  style="width: 100%; height: auto; border-radius: 8px;">
+                <p style="text-align: center; margin-top: 5px;">Bun Cha Ha Noi</p>
+              </div>
+              <div style="flex: 1; margin: 0 10px;">
+                <img src="./assets/images/hobby-photo.png" alt="photo"
+                  style="width: 100%; height: auto; border-radius: 8px;">
+                <p style="text-align: center; margin-top: 5px;">My lovely digicam.</p>
+              </div>
+              <div style="flex: 1; margin: 0 10px;">
+                <img src="./assets/images/hobby-music.jpg" alt="music"
+                  style="width: 100%; height: auto; border-radius: 8px;">
+                <p style="text-align: center; margin-top: 5px;">Playing ukulele.</p>
+              </div>
+
+            </div>
+
+          </ul>
+
+        </section>
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University of West Florida</h4>
+
+              <span>2022-2026</span>
+
+              <p class="timeline-text">
+                B.S in Management Information Systems, Minor in Computer Science (Expected Dec 2026)
+              </p>
+              <p class="timeline-text">
+                • Overall GPA: 3.80/4.00 | Dean's List | University Honors Program
+              </p>
+              <p class="timeline-text">
+                • Relevant Coursework: Business Data Management, Business Analytics, E-Business Systems
+              </p>
+              <p class="timeline-text">
+                • Certificates: Google Data Analytics Professional
+              </p>
+              <p class="timeline-text">
+                • Skills: Excel, SQL, Python, Tableau, Power BI, Microsoft Office, C++
+              </p>
+
+            </li>
+
+          </ol>
+
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Participant - Business + Tech Datathon at University of Michigan</h4>
+              <span>Feb 2025</span>
+              <p class="timeline-text">
+                • Preprocessed and validated a dataset of over 1 million Employment-Based Immigration petitions using
+                SQL-driven ETL processes and VBA, improving data accuracy for more informed decision-making.
+              </p>
+              <p class="timeline-text">
+                • Refined metrics and automated visa processing procedures, resulting in a 12% increase in visa
+                acceptance rates for technology companies by optimizing applicant qualification criteria.
+              </p>
+              <p class="timeline-text">
+                • Developed an interactive Tableau dashboard to visualize 10 years of hiring trends for international
+                students using time series analysis, leading to a 35% improvement in workforce planning.
+              </p>
+            </li>
+          </ol>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Research Assistant - Computational Statistics & Data Analytics Lab,
+                University of West Florida</h4>
+              <span>May 2024 - Aug 2024</span>
+              <p class="timeline-text">
+                • Processed and cleaned student data using Python (pandas, NumPy), conducted in-depth research on
+                machine learning metrics, enhancing model accuracy to 90% for dropout risk detection.
+              </p>
+              <p class="timeline-text">
+                • Led a 5-member cross-functional team using Agile methodology, improving project delivery timelines by
+                30% and enhancing team collaboration with ClickUp.
+              </p>
+            </li>
+          </ol>
+
+          <section class="timeline">
+
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Projects</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Digital Wallet Analysis</h4>
+
+                <p class="timeline-text">
+                  • Conducted advanced SQL queries on 5,000+ transactions using Recency-Frequency-Monetary analysis to
+                  identify purchase behavioral trends through customer segmentation, enhancing targeted marketing
+                  strategies.
+                </p>
+                <p class="timeline-text">
+                  • Streamlined payment channel efficiency by analyzing the correlation between payment method and
+                  transaction success rate, resulting in a 17% increase in successful transactions.
+                </p>
+              </li>
+            </ol>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Employee Performance Analysis</h4>
+
+                <p class="timeline-text">
+                  • Utilized Excel PivotTable and DAX query in cohort analysis to identify churn rate over 10 years with
+                  1,470 employee records, leading to targeted retention strategies.
+                </p>
+                <p class="timeline-text">
+                  • Developed employee performance reports through Power BI to facilitate data-driven decision-making
+                  within the internal organization.
+                </p>
+              </li>
+            </ol>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">E-Commerce Analysis</h4>
+
+                <p class="timeline-text">
+                  • Recommended data-driven insights to business leaders by creating an automated Power BI dashboard to
+                  track revenue, profit, and customer retention rates by month.
+                </p>
+                <p class="timeline-text">
+                  • Performed analysis on order trends by quarters and payment method preference using Python (Pandas)
+                  to optimize inventory planning and payment system processes.
+                </p>
+              </li>
+            </ol>
+
+            <section class="timeline">
+
+              <div class="title-wrapper">
+                <div class="icon-box">
+                  <ion-icon name="book-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3">Campus Involvement</h3>
+              </div>
+
+              <ol class="timeline-list">
+                <li class="timeline-item">
+                  <h4 class="h4 timeline-item-title">Beta Alpha Psi | Member</h4>
+                  <span>Jan 2025 - Present</span>
+                  <p class="timeline-text">
+                    • Engaged in an honor organization dedicated to the development of future financial and business
+                    information professionals.
+                  </p>
+                </li>
+              </ol>
+
+              <ol class="timeline-list">
+                <li class="timeline-item">
+                  <h4 class="h4 timeline-item-title">Women Leadership Conference | Volunteer Organizer</h4>
+                  <span>Mar 2025</span>
+                  <p class="timeline-text">
+                    • Coordinated event planning and managed registration for a 250+ attendee conference, ensuring
+                    smooth operations and participant engagement.
+                  </p>
+                </li>
+              </ol>
+
+              <ol class="timeline-list">
+                <li class="timeline-item">
+                  <h4 class="h4 timeline-item-title">Computational Statistics & Data Analytics Lab | Member</h4>
+                  <span>Aug 2023 – Aug 2024</span>
+                  <p class="timeline-text">
+                    • Collaborated with faculty and peers in weekly research discussions and presentations about
+                    statistical and machine learning models.
+                  </p>
+                </li>
+              </ol>
+            </section>
+      </article>
+
+      <!--
+    - #Portfolio
+    -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects"></section>
+        <ul class="project-list">
+
+          <li class="project-item active" data-filter-item data-category="Digital Wallet Analysis">
+            <a
+              href="https://app.powerbi.com/reportEmbed?reportId=ae8fe7b7-e77f-4a82-92be-8d16e79c68cd&autoAuth=true&ctid=784e9aa8-b8f4-4aa9-b183-19811619b9ee">
+
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/project_1.png" alt="Digital Wallet Analysis" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Digital Wallet Analysis - Power BI</h3>
+              <p class="project-category">An interactive dashboard to analyze spending trends and payment method
+                preferences in digital wallet platform through customer segmentation.</p>
+            </a>
+          </li>
+
+          <li class="project-item active" data-filter-item data-category="E-Commerce Platform Analysis">
+            <a
+              href="https://app.powerbi.com/reportEmbed?reportId=b0af1c9d-727c-4937-87e4-ccbf67f361a2&autoAuth=true&ctid=784e9aa8-b8f4-4aa9-b183-19811619b9ee">
+
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/project_2.png" alt="E-Commerce Analysis" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">E-Commerce Report - Power BI</h3>
+              <p class="project-category">An interactive report for tracking top-performing products, orders, profits,
+                and retention rates by month.</p>
+            </a>
+          </li>
+        </ul>
+
+        </section>
+
+      </article>
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    const navLinks = document.querySelectorAll('[data-nav-link]');
+    const sections = document.querySelectorAll('article');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        sections.forEach(section => section.classList.remove('active'));
+        const targetPage = link.textContent.toLowerCase();
+        const targetSection = document.querySelector(`article[data-page="${targetPage}"]`);
+        targetSection.classList.add('active');
+      });
+    });
+  </script>
+</body>
+
+</html>
